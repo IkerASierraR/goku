@@ -419,12 +419,12 @@ gap: 0.85rem;
 }
 
 .horario-btn.secondary {
-  background-color: #e2e8f0;
-  color: #0f172a;
+  background-color: #e0e7ff;
+  color: #1d4ed8;
 }
 
 .horario-btn.secondary:hover {
-  background-color: #cbd5f5;
+  background-color: #d6ddff;
 }
 
 @media (max-width: 640px) {

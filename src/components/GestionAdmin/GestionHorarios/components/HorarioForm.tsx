@@ -166,7 +166,8 @@ export const HorarioForm: React.FC<HorarioFormProps> = ({
 
       <div className="horario-form-actions">
         <button
-          className="horario-form-btn"
+          type="button"
+          className="horario-btn primary"
           disabled={submitting}
           onClick={onSubmit}
         >
@@ -178,7 +179,8 @@ export const HorarioForm: React.FC<HorarioFormProps> = ({
         </button>
 
         <button
-          className="horario-form-btn-cancel"
+          type="button"
+          className="horario-btn secondary"
           onClick={onCancel}
           disabled={submitting}
         >
