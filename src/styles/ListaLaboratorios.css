@@ -1,0 +1,289 @@
+.lab-list {
+  width: 100%;
+  background: linear-gradient(180deg, #f5f9ff 0%, #eef2ff 100%);
+  padding: 2.5rem 1rem 3rem;
+}
+
+.lab-list__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lab-list__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.lab-list__header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.lab-list__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 9999px;
+  border: none;
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.lab-list__back:hover {
+  background: rgba(37, 99, 235, 0.18);
+  transform: translateX(-2px);
+}
+
+.lab-list__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.lab-list__subtitle {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #1d4ed8;
+}
+
+.lab-list__my-reservations {
+  border: none;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  box-shadow: 0 10px 25px -12px rgba(37, 99, 235, 0.7);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lab-list__my-reservations:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px -12px rgba(37, 99, 235, 0.75);
+}
+
+.lab-list__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lab-list__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-end;
+  min-width: 260px;
+}
+
+.lab-list__filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 200px;
+}
+
+.lab-list__filter-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+}
+
+.lab-list__filter-select {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.75rem;
+  border: 1px solid #cbd5f5;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.05);
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.lab-list__filter-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.lab-list__filter-select:disabled {
+  cursor: not-allowed;
+  background: rgba(226, 232, 240, 0.6);
+  color: #94a3b8;
+}
+
+.lab-list__filters-error {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #b91c1c;
+}
+
+.lab-list__search {
+  position: relative;
+  flex: 1 1 280px;
+  display: flex;
+  align-items: center;
+}
+
+.lab-list__search-icon {
+  position: absolute;
+  left: 1rem;
+  color: #94a3b8;
+}
+
+.lab-list__search-input {
+  width: 100%;
+  padding: 0.85rem 1rem 0.85rem 3rem;
+  border-radius: 9999px;
+  border: 1px solid #cbd5f5;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.05);
+  font-size: 0.95rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.lab-list__search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.lab-list__summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lab-list__summary-count {
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ================================ */
+/*   TARJETAS ANCHAS Y BONITAS      */
+/* ================================ */
+
+.lab-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  gap: 1.75rem;
+}
+
+.lab-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 20px 40px -24px rgba(15, 23, 42, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  width: 100%;
+  min-height: 260px;
+}
+
+.lab-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 40px -20px rgba(37, 99, 235, 0.35);
+}
+
+.lab-card--disponible { border-top: 4px solid #22c55e; }
+.lab-card--mantenimiento { border-top: 4px solid #fbbf24; }
+.lab-card--ocupado { border-top: 4px solid #ef4444; }
+.lab-card--no-disponible { border-top: 4px solid #6366f1; }
+
+.lab-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.lab-card__description {
+  margin-top: -0.4rem;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.4rem;
+}
+
+/* ================================ */
+/*     BOTONES BONITOS OTRA VEZ     */
+/* ================================ */
+
+.lab-card__footer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.lab-card__button {
+  border-radius: 9999px;
+  padding: 0.7rem 1.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lab-card__button--outline {
+  background: #ffffff;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.lab-card__button--outline:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -12px rgba(37, 99, 235, 0.45);
+}
+
+.lab-card__button--primary {
+  background: linear-gradient(90deg, #10b981 0%, #0f766e 100%);
+  color: white;
+  box-shadow: 0 12px 20px -10px rgba(13, 148, 136, 0.45);
+}
+
+.lab-card__button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 30px -14px rgba(13, 148, 136, 0.55);
+}
+
+/* ================================ */
+
+@media (min-width: 1024px) {
+  .lab-list {
+    padding: 3rem 0 4rem;
+  }
+
+  .lab-list__title {
+    font-size: 2.25rem;
+  }
+}
